@@ -13,6 +13,7 @@ public class DogfightController implements IOrderPerformer{
 	
 	public void play(){
 		
+		
 	}
 	
 	public void setViewSystem(IViewSystem viewSystem){
@@ -24,6 +25,16 @@ public class DogfightController implements IOrderPerformer{
 	}
 	
 	private void gameLoop(){
+		
+	}
+	
+	private boolean isWeaponOnMobile(){
+		
+		if(){
+			return true;
+		}
+		
+		return false;
 		
 	}
 
