@@ -1,9 +1,12 @@
 package jpu2016.dogfight.gameframe;
 
-public class IGraphicsBuilder {
+import java.awt.Graphics;
+import java.awt.image.ImageObserver;
 
-	public IGraphicsBuilder() {
-		// TODO Auto-generated constructor stub
-	}
-
+public interface IGraphicsBuilder {
+	
+	public void applyModelToGraphic (Graphics graphics , ImageObserver observer);
+	
+	int getGlobalWidth();
+	int getGlobalHeight();
 }
