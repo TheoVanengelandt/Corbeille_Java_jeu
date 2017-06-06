@@ -20,5 +20,5 @@ public interface IMobile {
 	public void setDoghfightModel(doghfightModel DogfightModel);
 	public boolean hit();
 	public boolean isWeapon();
-
+//
 }
