@@ -1,6 +1,7 @@
 package jpu2016.dogfight.controller;
 
 import jpu2016.dogfight.modele.IDogfightModel;
+
 import jpu2016.dogfight.view.IViewSystem;
 
 public class DogfightController implements IOrderPerformer{
