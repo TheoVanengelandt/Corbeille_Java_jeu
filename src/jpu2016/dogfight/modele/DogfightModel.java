@@ -1,7 +1,9 @@
 package jpu2016.dogfight.modele;
 
+import java.awt.Dimension;
+import java.util.*;
 
-public class DogfightModel implements IDogfightModel extends observable{
+public class DogfightModel extends Observable implements IDogfightModel{
 	
 	public DogfightModel() {
 	}
