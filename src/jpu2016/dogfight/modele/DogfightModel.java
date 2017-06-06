@@ -20,9 +20,11 @@ public class DogfightModel extends Observable implements IDogfightModel{
 		
 	}
 	public ArrayList<IMobile> getMobiles(){
+		return null;
 		
 	}
 	public IMobile getMobileByPlayer(int player){
+		return null;
 		
 	}
 	public void setMobilesHavesMoved(){

@@ -7,6 +7,7 @@ import java.awt.image.ImageObserver;
 
 import jpu2016.dogfight.gameframe.IGraphicsBuilder;
 import jpu2016.dogfight.modele.IDogfightModel;
+import jpu2016.dogfight.modele.IMobile;
 
 public class GraphicsBuilder implements IGraphicsBuilder {
 
@@ -25,7 +26,6 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	private void drawMobile(IMobile mobile, Graphics graphics, ImageObserver observer) {
 		
 		final BufferedImage imageMobile = new BufferedImage(mobile.getWidth(), mobile.getHeight(), Transparency.TRANSLUCENT); 
-		// Du moins....
  	 	final Graphics graphicsMobile = imageMobile.getGraphics(); 
  	 	
   	 	graphicsMobile.drawImage(mobile.getImage(), 0, 0, mobile.getWidth(), mobile.getHeight(), observer); 
@@ -37,7 +37,7 @@ public class GraphicsBuilder implements IGraphicsBuilder {
  	 	 	final BufferedImage imageMobileH = imageMobile.getSubimage(this.dogfightModel.getArea().getWidth() - mobile.getPosition().getX(), 0, (mobile.getWidth() - this.dogfightModel.getArea().getWidth()) + mobile.getPosition().getX(), mobile.getHeight()); 
  	 	 	graphics.drawImage(imageMobileH, 0, mobile.getPosition().getY(), observer); 
  	 	} 
- 	// Du moins....
+    
  	 	if (isVerticalOut) { 
  	 	 	final BufferedImage imageMobileV = imageMobile.getSubimage(0, this.dogfightModel.getArea().getHeight() - mobile.getPosition().getY(), mobile.getWidth(), (mobile.getHeight() - this.dogfightModel.getArea().getHeight()) + mobile.getPosition().getY()); 
  	 	 	graphics.drawImage(imageMobileV, mobile.getPosition().getX(), 0, observer); 
@@ -49,13 +49,11 @@ public class GraphicsBuilder implements IGraphicsBuilder {
  	 	} 
 	}
 	public int getGlobalWidth() {
-		return 0;// Du moins....
+		return 0;
 	}
 	
 	public int getGlobalHeight() {
 		return 0;
 	}
-
-
 	
 }
