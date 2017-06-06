@@ -26,5 +26,5 @@ public class DogfightModel implements IDogfightModel extends observable{
 	public void setMobilesHavesMoved(){
 		
 	}
-
+//
 }
