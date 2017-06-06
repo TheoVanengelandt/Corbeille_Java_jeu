@@ -21,6 +21,6 @@ public interface IMobile {
 	public boolean hit();
 	public boolean isWeapon();
 		
-	
+	//
 
 }
