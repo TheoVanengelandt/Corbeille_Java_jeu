@@ -5,6 +5,7 @@ import java.awt.image.ImageObserver;
 
 import jpu2016.dogfight.gameframe.IGraphicsBuilder;
 import jpu2016.dogfight.modele.IDogfightModel;
+import jpu2016.dogfight.modele.IMobile;
 
 public class GraphicsBuilder implements IGraphicsBuilder {
 
@@ -12,7 +13,7 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 		
 	}
 	
-	public void applyModelToGraphics(Graphics graphics, ImageObserver observer) {
+	public void applyModelToGraphic(Graphics graphics, ImageObserver observer) {
 		
 	}
 	
@@ -30,5 +31,6 @@ public class GraphicsBuilder implements IGraphicsBuilder {
 	public int getGlobalHeight() {
 		return 0;
 	}
+
 	
 }

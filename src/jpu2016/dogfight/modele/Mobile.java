@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 
 import com.sun.javafx.scene.paint.GradientUtils.Point;
+import com.sun.javafx.scene.traversal.Direction;
 import com.sun.xml.internal.ws.dump.LoggingDumpTube.Position;
 
 public class Mobile implements IMobile{
@@ -20,9 +21,6 @@ public class Mobile implements IMobile{
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	public Image getImage(){
-		
-	}
 	
 	private void moveUp(){
 		
@@ -37,6 +35,7 @@ public class Mobile implements IMobile{
 	}
 	
 	public Color getColor(){
+		return null;
 		
 	}
 
@@ -70,8 +69,8 @@ public class Mobile implements IMobile{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	@Override
-	public image getImage() {
+
+	public Image getImage() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -91,7 +90,7 @@ public class Mobile implements IMobile{
 		return false;
 	}
 	@Override
-	public void setDoghfightModel(doghfightModel DogfightModel) {
+	public void setDoghfightModel(DogfightModel doghfightModel) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Image;
 
 import com.sun.javafx.scene.paint.GradientUtils.Point;
+import com.sun.javafx.scene.traversal.Direction;
 
 public interface IMobile {
 	public Direction getDirection();
@@ -17,7 +18,7 @@ public interface IMobile {
 	public void move();
 	public void placeInArea(IArea area);
 	public boolean isPlayer(int player);
-	public void setDoghfightModel(doghfightModel DogfightModel);
+	public void setDoghfightModel(DogfightModel doghfightModel);
 	public boolean hit();
 	public boolean isWeapon();
 //
