@@ -1,6 +1,5 @@
 import jpu2016.dogfight.controller.DogfightController;
-import jpu2016.dogfight.modele.DogfightModel;
-import jpu2016.dogfight.modele.IDogfightModel;
+import jpu2016.dogfight.modele.*;
 import jpu2016.dogfight.view.DogfightView;
 
 public class Dogfight {
@@ -9,7 +8,7 @@ public class Dogfight {
 		
 		final DogfightModel dogfightModel = new DogfightModel();
 		final DogfightController dogfightController = new DogfightController((IDogfightModel) dogfightModel);
-		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel);
+		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel, dogfightModel);
 		dogfightController.setViewSystem(dogfightView);
 		dogfightController.play();
 

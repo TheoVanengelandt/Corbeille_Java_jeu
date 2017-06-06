@@ -33,12 +33,13 @@ public class DogfightController implements IOrderPerformer{
 	}
 	
 	private boolean isWeaponOnMobile(){
+		int values = 0;
 		
-		if(){
-			return true;
+		if(values == 1){
+			return false;
 		}
 		
-		return false;
+		return true;
 		
 	}
 
