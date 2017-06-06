@@ -7,6 +7,7 @@ public class Dogfight {
 
 	public static void main(String[] args) {
 		
+		//Cette partie de code fonctionne correctement : PHASE 3 - OK
 		final DogfightModel dogfightModel = new DogfightModel();
 		final DogfightController dogfightController = new DogfightController(dogfightModel);
 		final DogfightView dogfightView = new DogfightView(dogfightController, dogfightModel, dogfightModel);
