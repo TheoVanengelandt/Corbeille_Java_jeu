@@ -1,6 +1,6 @@
 package jpu2016.dogfight.modele;
 
-public class Mobile {
+public class Mobile implements IMobile{
 	private int speed;
 
 	public int getSpeed() {
