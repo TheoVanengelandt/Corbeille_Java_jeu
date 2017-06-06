@@ -1,6 +1,7 @@
 package jpu2016.dogfight.modele;
 
-//comit 2
+import java.awt.Dimension;
+import java.util.ArrayList;
 
 public interface IDogfightModel {
 	
