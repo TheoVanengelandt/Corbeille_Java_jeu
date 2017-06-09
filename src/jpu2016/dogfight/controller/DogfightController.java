@@ -1,7 +1,6 @@
 package jpu2016.dogfight.controller;
 
 import jpu2016.dogfight.modele.IDogfightModel;
-
 import jpu2016.dogfight.view.IViewSystem;
 
 public class DogfightController implements IOrderPerformer{
@@ -25,6 +24,7 @@ public class DogfightController implements IOrderPerformer{
 	}
 	
 	private void lauchMissile(int player){
+		private Mobile weapon = new Mobile();
 		
 	}
 	
@@ -32,15 +32,26 @@ public class DogfightController implements IOrderPerformer{
 		
 	}
 	
-	private boolean isWeaponOnMobile(){
+	private boolean isWeaponOnMobile(final IMobile mobile, final IMobile weapon){
 		int values = 0;
 		
-		if(values == 1){
+		if(weapon.getPosition().getX() / weapon.getWidth() != (mobile.getPosition().getX() / weapon.getWidth())){
+			if(weapon.getPosition().getY() / weapon.getHeight() != (mobile.getPosition().getY() / weapon.getHeight())){
+				return true;
+			}
+		}
+		else{
 			return false;
 		}
-		
-		return true;
-		
+	}
+	
+	private boolean manageCollision(final IMobile weapon1, final IMobile weapon2){
+		if(isWeaponOnMobile(weapon1, weapon2) == true){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 }
