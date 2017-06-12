@@ -3,17 +3,15 @@ package jpu2016.dogfight.controller;
 import java.util.ArrayList;
 
 import jpu2016.dogfight.modele.IDogfightModel;
-import jpu2016.dogfight.modele.IMobile;
-
 import jpu2016.dogfight.view.IViewSystem;
 
 public class DogfightController implements IOrderPerformer{
 	private int TIME_SLEEP = 30;
+	private IDogfightModel dogfightModel;
 	
-	//ArrayList<IMobile> List_Mobiles = getMobiles();
 	
 	public DogfightController(IDogfightModel dogfightModel){
-		
+		this.dogfightModel = dogfightModel;
 	}
 	
 	public void orderPerfrom(UserOrder userOrder){
@@ -56,7 +54,7 @@ public class DogfightController implements IOrderPerformer{
 	
 	private boolean manageCollision(final IMobile weapon1, final IMobile weapon2){
 		if(isWeaponOnMobile(weapon1, weapon2) == true){
-			removeMobile(weapon1);
+			this.dogfightModel.removeMobile(weapon1);
 			removeMobile(weapon2);
 			return true;
 		}
